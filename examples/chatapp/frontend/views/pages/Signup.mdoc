@@ -1,12 +1,11 @@
-{% section .welcome %}
-{% image ref="..." alt="companyLogo" #signupPage .companyLogo /%}
+{% image ref="..." alt="companyLogo" .companyLogo /%}
+
 A simple chat web application
-{% /section %}
 
 {% tabs %}
 
-{% tab #signup %}
-{% section .form %}
+{% tab .signup %}
+{% section #form %}
 {% input type="email" /%}
 {% input type="password" /%}
 {% confirm type="signup" /%}
@@ -15,8 +14,8 @@ Already have an account?
 {% /section %}
 {% /tab %}
 
-{% tab #signin %}
-{% section .form %}
+{% tab .signin %}
+{% section #form %}
 {% input type="email" /%}
 {% input type="password" /%}
 {% confirm type="signin" /%}
