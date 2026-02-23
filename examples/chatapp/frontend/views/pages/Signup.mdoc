@@ -2,29 +2,32 @@
 
 A simple chat web application
 
+{% section #form %}
+
+{% error .form /%}
+
 {% tabs %}
 
 {% tab .signup %}
-{% section #form %}
+{% error .email /%}
 {% input type="email" /%}
+{% error .password /%}
 {% input type="password" /%}
 {% confirm type="signup" /%}
 Already have an account?
 [__Sign In__]() {% .changeSignIn %}
-{% /section %}
 {% /tab %}
 
 {% tab .signin %}
-{% section #form %}
+{% error .email /%}
 {% input type="email" /%}
+{% error .password /%}
 {% input type="password" /%}
 {% confirm type="signin" /%}
 Dont have an account?
 [__Sign up__]() {% .changeSignUp %}
-{% /section %}
 {% /tab %}
 
 {% /tabs %}
-
-
+{% /section %}
 
