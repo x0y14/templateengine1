@@ -1,0 +1,31 @@
+{% section .welcome %}
+{% image ref="..." alt="companyLogo" #signupPage .companyLogo /%}
+A simple chat web application
+{% /section %}
+
+{% tabs %}
+
+{% tab #signup %}
+{% section .form %}
+{% input type="email" /%}
+{% input type="password" /%}
+{% confirm type="signup" /%}
+Already have an account?
+[__Sign In__]() {% .changeSignIn %}
+{% /section %}
+{% /tab %}
+
+{% tab #signin %}
+{% section .form %}
+{% input type="email" /%}
+{% input type="password" /%}
+{% confirm type="signin" /%}
+Dont have an account?
+[__Sign up__]() {% .changeSignUp %}
+{% /section %}
+{% /tab %}
+
+{% /tabs %}
+
+
+
